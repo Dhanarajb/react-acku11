@@ -1,13 +1,9 @@
 import React from 'react';
 const HOC = (Component) => {
-  const obje = {
+  const obj = {
     name: 'Dhanu',
     age: 26,
   };
-  return (
-    <div>
-      <Component value={obje} />
-    </div>
-  );
+  return ()=><Component value={obj} />
 };
 export default HOC;
